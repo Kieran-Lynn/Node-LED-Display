@@ -1,0 +1,14 @@
+{
+  "name": "rpi-led-display",
+  "version": "0.0.0",
+  "description": "Node js implementation of running a LED display on rpi",
+  "main": "index.js",
+  "scripts": {
+    "start:clock": "sudo node src/clock.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "easybotics-rpi-rgb-led-matrix": "^0.3.0"
+  }
+}
