@@ -14,7 +14,7 @@ Works with Adafruit Hat on Raspberry Pi.
 
 
 
-References:
+### References:
 
 [Hzellers initial LED Matrix API](https://github.com/hzeller/rpi-rgb-led-matrix)
 
