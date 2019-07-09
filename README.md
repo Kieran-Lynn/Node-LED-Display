@@ -12,6 +12,8 @@ Works with Adafruit Hat on Raspberry Pi.
 
 4. Run `npm run start:clock` to start the clock on your LED display.
 
+5. Run `npm run start:weather` to start the weather display on your LED display.
+
 
 
 ### References:
