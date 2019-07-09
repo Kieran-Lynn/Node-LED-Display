@@ -1,14 +1,31 @@
 {
-  "name": "rpi-led-display",
-  "version": "0.0.0",
-  "description": "Node js implementation of running a LED display on rpi",
-  "main": "index.js",
-  "scripts": {
-    "start:clock": "sudo node src/clock.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "easybotics-rpi-rgb-led-matrix": "^0.3.0"
-  }
+    "name": "rpi-led-display",
+    "version": "0.0.0",
+    "description": "Node js implementation of running a LED display on rpi",
+    "main": "index.js",
+    "scripts": {
+        "build:clock": "babel src/clock.js -d dist",
+        "build:weather": "babel src/weather/weather.js -d dist",
+        "start:clock": "npm run build:clock && sudo node dist/clock.js",
+        "start:weather": "npm run build:weather && sudo node dist/weather.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "easybotics-rpi-rgb-led-matrix": "^0.3.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.0",
+        "@babel/core": "^7.5.0",
+        "@babel/preset-env": "^7.5.2",
+        "babel-plugin-module-resolver": "^3.2.0",
+        "babel-plugin-transform-dirname-filename": "^1.1.0",
+        "eslint": "^5.3.0",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-import": "^2.18.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "prettier": "^1.18.2"
+    }
 }
