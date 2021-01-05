@@ -12,7 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "easybotics-rpi-rgb-led-matrix": "^0.3.0"
     },
     "devDependencies": {
